@@ -26,7 +26,7 @@ export default function CVPage() {
               <div className="space-y-4 mt-6">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="font-helvetica text-xl text-foreground">Georgia Institute of Technology</h3>
-                  <span className="font-helvetica text-sm text-foreground">Expected Graduation, December 2026</span>
+                  <span className="font-helvetica text-sm text-foreground">Expected Graduation, May 2026</span>
                 </div>
                 <p className="font-helvetica italic text-foreground">Bachelor of Science in Computer Science</p>
                 <p className="font-helvetica text-sm text-foreground">Atlanta, Georgia</p>

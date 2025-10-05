@@ -34,7 +34,7 @@ export default function AboutPage() {
               <p className="font-helvetica text-lg text-foreground leading-relaxed text-pretty">
                 Although my formal background is in Computer Science, Machine Learning, Statistics or HCI, given my sort
                 of autodidact way of learning, I try to dive deep into anything that piques my curiosity. This has been
-                trying to (and failing) to learn German, making 2D shooter games, trying to fit a very rudimentary
+                trying (and failing) to learn German, making 2D shooter games, trying to fit a very rudimentary
                 assistant on my forearm or charcoal art (my mom's a painter, so I guess I inherited some genes).
               </p>
 
