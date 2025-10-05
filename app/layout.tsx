@@ -4,8 +4,6 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 
-import { Geist, Geist_Mono } from "geist/font"
-
 import { Source_Serif_4, Geist as V0_Font_Geist, Geist_Mono as V0_Font_Geist_Mono, Source_Serif_4 as V0_Font_Source_Serif_4 } from 'next/font/google'
 
 // Initialize fonts
@@ -20,8 +18,6 @@ const sourceSerif4 = Source_Serif_4({
   variable: "--font-source-serif-4",
 })
 
-const fontVariables = `${Geist.variable} ${Geist_Mono.variable} ${sourceSerif4.variable}`
-
 export const metadata: Metadata = {
   title: "Rohan Bhasin - Portfolio",
   description: "Personal portfolio of Rohan Bhasin",
@@ -35,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-helvetica-neue ${fontVariables} ${_v0_fontVariables}`}>
+      <body className={`font-helvetica-neue ${sourceSerif4.variable} ${_v0_fontVariables}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
