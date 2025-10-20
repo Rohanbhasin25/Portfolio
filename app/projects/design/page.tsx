@@ -21,6 +21,18 @@ const designProjects = [
     externalLink: "https://www.figma.com/board/N97cOvOySrmS8ZjvZN0Ojc/Invoke-AI?node-id=0-1&t=jVCjS7yQh4PIQ0rV-1",
   },
   {
+    id: "series-so",
+    title: "Series.so",
+    description:
+      "Developed conversational UX and redesigned posting experience for a new ai-native, in-text social media platform",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/thumb-VsLcVFDaHsufZ1BgLuzu2yu92bbmJi.png",
+    category: "design",
+    externalLink:
+      "https://www.figma.com/proto/m23qMRXzO00Lc0Mq8Dn8Cv/Case-Study-Presentation-Layout-for-Design-Interviews--Community-?node-id=94-106&t=rWdZaPaLMpxTyV17-1",
+    passwordProtected: true,
+    password: "socialposts",
+  },
+  {
     id: "imago",
     title: "Imago",
     description:
