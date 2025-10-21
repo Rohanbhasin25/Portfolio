@@ -25,7 +25,8 @@ const designProjects = [
     title: "Series.so",
     description:
       "Developed conversational UX and redesigned posting experience for a new ai-native, in-text social media platform",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/thumb-VsLcVFDaHsufZ1BgLuzu2yu92bbmJi.png",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Manual%20Annotation%20Process%20%2812%29-ctyzt8hlH5mM45XgMmHR3N8afX7sYc.png",
     category: "design",
     externalLink:
       "https://www.figma.com/proto/m23qMRXzO00Lc0Mq8Dn8Cv/Case-Study-Presentation-Layout-for-Design-Interviews--Community-?node-id=94-106&t=rWdZaPaLMpxTyV17-1",
