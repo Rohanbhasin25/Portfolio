@@ -70,15 +70,6 @@ export function Navigation() {
               About
             </Link>
 
-            {/* CV link */}
-            <Link
-              href="/cv"
-              className="font-helvetica text-foreground hover:opacity-70 transition-opacity animate-stagger-fade animate-delay-250 cursor-pointer tracking-tighter"
-              onClick={handlePixelClick}
-            >
-              CV
-            </Link>
-
             {/* Projects Dropdown */}
             <DropdownMenu>
               {/* Projects trigger */}
