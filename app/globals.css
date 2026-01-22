@@ -3,10 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Updated color scheme to black and white only */
+/* Simplified black/white scheme + default system fonts */
 :root {
-  --background: oklch(1 0 0); /* Pure white */
-  --foreground: oklch(0.25 0 0); /* Lighter black for better readability */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.25 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.25 0 0);
   --popover: oklch(1 0 0);
@@ -24,11 +24,6 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
@@ -39,10 +34,12 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Default font stacks (no Geist) */
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /* Default system font stacks */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Georgia", "Times New Roman", serif;
-  --font-mono: ui-monospace, "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
+  --font-mono: ui-monospace, "SFMono-Regular", "Consolas", "Liberation Mono",
+    "Menlo", monospace;
 }
 
 @theme inline {
@@ -91,7 +88,7 @@
   }
 }
 
-/* Font utility classes */
+/* Typography utilities */
 .font-sans {
   font-family: var(--font-sans);
 }
@@ -102,37 +99,92 @@
   font-family: var(--font-mono);
 }
 
-/* Animations (unchanged) */
+/* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes staggerFadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes pixelGlitch {
-  0%, 100% { text-shadow: 0 0 0 transparent; transform: scale(1); }
-  20% { text-shadow: 2px 0 0 #ff0000, -2px 0 0 #00ff00, 0 2px 0 #0000ff; transform: scale(1.02); }
-  40% { text-shadow: -1px 0 0 #ff0000, 1px 0 0 #00ff00, 0 -1px 0 #0000ff; transform: scale(0.98); }
-  60% { text-shadow: 1px 1px 0 #ff0000, -1px -1px 0 #00ff00, 1px -1px 0 #0000ff; transform: scale(1.01); }
-  80% { text-shadow: 0 0 0 #ff0000, 0 0 0 #00ff00, 0 0 0 #0000ff; transform: scale(1); }
+  0%,
+  100% {
+    text-shadow: 0 0 0 transparent;
+    transform: scale(1);
+  }
+  20% {
+    text-shadow: 2px 0 0 #ff0000, -2px 0 0 #00ff00, 0 2px 0 #0000ff;
+    transform: scale(1.02);
+  }
+  40% {
+    text-shadow: -1px 0 0 #ff0000, 1px 0 0 #00ff00, 0 -1px 0 #0000ff;
+    transform: scale(0.98);
+  }
+  60% {
+    text-shadow: 1px 1px 0 #ff0000, -1px -1px 0 #00ff00, 1px -1px 0 #0000ff;
+    transform: scale(1.01);
+  }
+  80% {
+    text-shadow: 0 0 0 #ff0000, 0 0 0 #00ff00, 0 0 0 #0000ff;
+    transform: scale(1);
+  }
 }
-.pixel-click-animation { animation: pixelGlitch 0.6s ease-in-out; }
-.animate-fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
-.animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; opacity: 0; }
-.animate-stagger-fade { animation: staggerFadeIn 0.6s ease-out forwards; opacity: 0; }
-.animate-delay-100 { animation-delay: 0.1s; }
-.animate-delay-200 { animation-delay: 0.2s; }
-.animate-delay-300 { animation-delay: 0.3s; }
-.animate-delay-400 { animation-delay: 0.4s; }
-.animate-delay-500 { animation-delay: 0.5s; }
+.pixel-click-animation {
+  animation: pixelGlitch 0.6s ease-in-out;
+}
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+.animate-stagger-fade {
+  animation: staggerFadeIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
 
-/* Dark mode (unchanged) */
+/* Dark mode */
 .dark {
   --background: oklch(0.08 0 0);
   --foreground: oklch(0.985 0 0);
@@ -148,8 +200,6 @@
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.2 0 0);
   --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.2 0 0);
   --input: oklch(0.2 0 0);
   --ring: oklch(0.439 0 0);
