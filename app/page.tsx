@@ -33,7 +33,7 @@ export default function HomePage() {
                 Hi, I'm Rohan
               </h1>
               <p className="font-times italic text-lg text-foreground/70 animate-fade-in animate-delay-100 font-extralight tracking-tighter">
-                Currently in Metz, France
+                Currently in Atlanta/NY
               </p>
               <hr className="border-t border-foreground/20 w-full" />
             </div>
