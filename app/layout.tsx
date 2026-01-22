@@ -35,7 +35,7 @@ export default function RootLayout({
         className={`font-sans ${sourceSerif4.variable} ${_v0_fontVariables}`}
         style={{
           fontFamily:
-            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+            "Arial, Helvetica, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
         }}
       >
         <Suspense fallback={null}>{children}</Suspense>
