@@ -31,13 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`font-sans ${sourceSerif4.variable} ${_v0_fontVariables}`}
-        style={{
-          fontFamily:
-            "Arial, Helvetica, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-        }}
-      >
+      <body className={`${sourceSerif4.variable} font-serif ${_v0_fontVariables}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>

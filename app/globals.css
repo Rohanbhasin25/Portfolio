@@ -55,10 +55,10 @@
 }
 
 @theme inline {
-  /* Updated font configuration to use Arial for sans and mono, keeping Source Serif 4 for serif */
-  --font-sans: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: var(--font-source-serif-4);
-  --font-mono: Arial, sans-serif;
+  /* Updated font configuration to use Source Serif 4 for all fonts */
+  --font-sans: var(--font-source-serif-4), "Source Serif 4", serif;
+  --font-serif: var(--font-source-serif-4), "Source Serif 4", serif;
+  --font-mono: var(--font-source-serif-4), "Source Serif 4", serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
