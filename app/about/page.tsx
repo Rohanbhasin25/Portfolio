@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div className="space-y-12">
           {/* Header */}
           <div className="space-y-4">
-            <h1 className="font-times italic text-5xl text-foreground text-balance font-extralight tracking-tighter">About</h1>
+            <h1 className="font-times text-5xl text-foreground text-balance font-extralight tracking-tighter">About</h1>
             <div className="w-24 h-1 bg-foreground"></div>
           </div>
 

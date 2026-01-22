@@ -31,7 +31,7 @@ export default function FilmProjectsPage() {
         <div className="space-y-12">
           {/* Header */}
           <div className="space-y-6">
-            <h1 className="font-times italic text-5xl text-foreground text-balance">Film</h1>
+            <h1 className="font-times text-5xl text-foreground text-balance">Film</h1>
             <div className="w-24 h-1 bg-foreground"></div>
             <p className="font-helvetica text-lg text-foreground leading-relaxed text-pretty max-w-3xl">
               I grew obsessed with movies, from Shahrukh to Spielberg, I was obsessed with actions as small as a look,

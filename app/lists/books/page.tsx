@@ -160,7 +160,7 @@ export default function BooksListPage() {
         <div className="space-y-12">
           {/* Header */}
           <div className="space-y-6">
-            <h1 className="font-times italic text-5xl text-foreground text-balance">Books</h1>
+            <h1 className="font-times text-5xl text-foreground text-balance">Books</h1>
             <div className="w-24 h-1 bg-foreground"></div>
           </div>
 

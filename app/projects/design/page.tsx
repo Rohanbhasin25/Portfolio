@@ -16,7 +16,7 @@ const designProjects = [
     description:
       "A modular re-design of InvokeAI's (generative media platform for creative production) prompting experience.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-05%20at%202.45.20%E2%80%AFAM-LE27JWMxqGWOaiEjbBhBhjDm59MwyX.png",
+      "/images/screenshot-202025-10-05-20at-202.png",
     category: "design",
     externalLink: "https://www.figma.com/board/N97cOvOySrmS8ZjvZN0Ojc/Invoke-AI?node-id=0-1&t=jVCjS7yQh4PIQ0rV-1",
   },
@@ -26,7 +26,7 @@ const designProjects = [
     description:
       "Developed conversational UX and redesigned posting experience for a new ai-native, in-text social media platform",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Manual%20Annotation%20Process%20%2812%29-ctyzt8hlH5mM45XgMmHR3N8afX7sYc.png",
+      "/images/manual-20annotation-20process-20-2812-29.png",
     category: "design",
     externalLink:
       "https://www.figma.com/proto/m23qMRXzO00Lc0Mq8Dn8Cv/Case-Study-Presentation-Layout-for-Design-Interviews--Community-?node-id=94-106&t=rWdZaPaLMpxTyV17-1",
@@ -55,7 +55,7 @@ const designProjects = [
     description:
       "I've been building Cignull, a patent-pending JUUL deaddiction casing and app. Working on a radically new interface to help teenagers quite e-cigarrettes.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-05%20at%202.44.20%E2%80%AFAM-pmf7RSFqgdY9GDB0rYlQBvBuYkeiCc.png",
+      "/images/screenshot-202025-10-05-20at-202.png",
     category: "design",
     comingSoon: true,
   },
@@ -70,7 +70,7 @@ export default function DesignProjectsPage() {
         <div className="space-y-12">
           {/* Header */}
           <div className="space-y-6">
-            <h1 className="font-times italic text-5xl text-foreground text-balance">Design and Product</h1>
+            <h1 className="font-times text-5xl text-foreground text-balance">Design and Product</h1>
             <div className="w-24 h-1 bg-foreground"></div>
             <p className="font-helvetica text-lg text-foreground leading-relaxed text-pretty max-w-3xl">
               I've been designing, coding and managing products for over 4 years. To me great design is downstream of
